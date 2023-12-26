@@ -1,4 +1,4 @@
-import { Given, When, Then, And, After } from "cypress-cucumber-preprocessor/steps";
+import { Given, When, Then,  After } from "@badeball/cypress-cucumber-preprocessor"
 
 Given('I visit the page', ()=>{
     cy.visit('https://www.gsmarena.com/')
@@ -14,7 +14,7 @@ Then('I should be able to see General Section',()=>{
     cy.log("Phone description contains General Section")
 })
 
-And('Its contains Brand, Year, Availability, Price',()=>{
+Then('Its contains Brand, Year, Availability, Price',()=>{
     cy.contains("Brand:")
         cy.contains("Year:")
         cy.contains("Availability:")
@@ -26,7 +26,7 @@ Then('I should able to see  Platform Section',()=>{
     cy.get(".phonefinder-title").contains("Platform")
 })
 
-And ('Its contains OS version, chipset, CPU cores',()=>{
+Then ('Its contains OS version, chipset, CPU cores',()=>{
     cy.contains("OS:")
         cy.contains("OS Version:")
         cy.contains("Chipset:")

@@ -4,7 +4,7 @@ Feature: Cart
         Given I visit the page
 
     #***************************************************************************************
-    #CP-10
+    #CP-11
     #veriko lomadze
     #***************************************************************************************
     Scenario: Check Phone Finder page , if its contains key specification

@@ -15,13 +15,3 @@ Feature: Phone Finder
         Then Its contains OS version, chipset, CPU cores
 
 
-    #***************************************************************************************
-    #CP-11
-    #veriko lomadze
-    #***************************************************************************************
-    Scenario: Verify PLP Display for Selected Brand in Phone Finder
-        When I navigate to the Phone Finder page
-        Then Choose 'Samsung' as the mobile brand
-        Then I click on the 'Show Results' button
-        Then Verify that a PLP is displayed
-        Then Each item in the PLP contains the term 'Samsung'

@@ -24,6 +24,8 @@ async function setupNodeEvents(
 export default defineConfig({
   e2e: {
     baseUrl: "https://duckduckgo.com",
+    viewportHeight:800,
+    viewportWidth:1440,
     specPattern: "**/*.feature",
     setupNodeEvents,
   },

@@ -16,8 +16,6 @@ Then('Redirect to the Notebooks PDP',()=>{
 
 Then('Click the add to cart button', ()=>{
     cy.get('#add-to-cart-button-4').click()
-    cy.wait(4000)
-    
 })
 
 Then('The Message the product has been added to your Shopping card is shown',()=>{
